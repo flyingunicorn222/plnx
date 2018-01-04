@@ -31,11 +31,11 @@ for (let command in config.commands) {
 
     if (typeof cb !== 'function') {
       return new Promise((resolve, reject) => {
-        exports[command](options, (err, data) => {
+        exports[command](options, (err, response) => {
           if (err) {
             reject(err)
           } else {
-            resolve(data)
+            resolve(response)
           }
         })
       })
@@ -93,7 +93,7 @@ for (let command in config.commands) {
 
     dbg({ key, secret, opt, isPrivate, ropt })
 
-    request(ropt, (err, res, data) => { cb(err, res, data) })
+    request(ropt, (err, res, body) => { cb(err, res, body) })
   }
 }
 

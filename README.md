@@ -1,25 +1,21 @@
 # plnx2
 
-Forked '[plnx](https://github.com//rferro/plnx)' in order to improve error
+Forked '[plnx package](https://github.com//rferro/plnx)' in order to improve error
 handling among other minor details with the library.
 
-
-Unofficial Poloniex API client, with public/private methods and push.
-
-[![NPM](https://nodei.co/npm/plnx2.png?downloads=true&downloadRank=true)](https://nodei.co/npm/plnx2)
 
 ## Install
 
 ```sh
-npm install --save plnx
+npm install --save plnx2
 ```
 
 ## Use
 
 ```javascript
-const plnx = require('plnx')
+const plnx = require('plnx2')
 // or
-import plnx from 'plnx'
+import plnx from 'plnx2'
 ```
 
 ### Private/Public Methods
@@ -30,9 +26,11 @@ plnx.METHOD([options], [callback])
 
 * `options`: object (optional if empty)
   - With private methods, options.key and options.secret are required.
+
 * `callback`: function(err, data)
-  - `err`: Error instance if exists, or `null`.
-  - `data`: API response object
+  - `error`: Error instance if exists, or `null`.
+  - `response`: API response object
+  - `body`: response body
 
 > If no callback is provided, a Promise object is returned.
 
