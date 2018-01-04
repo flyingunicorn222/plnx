@@ -1,11 +1,12 @@
+# plnx2
 
-<img align="right" src="https://cdn.rawgit.com/feross/standard/master/badge.svg">
+Forked '[plnx](https://github.com//rferro/plnx)' in order to improve error
+handling among other minor details with the library.
 
-# plnx
 
 Unofficial Poloniex API client, with public/private methods and push.
 
-[![NPM](https://nodei.co/npm/plnx.png?downloads=true&downloadRank=true)](https://nodei.co/npm/plnx)
+[![NPM](https://nodei.co/npm/plnx2.png?downloads=true&downloadRank=true)](https://nodei.co/npm/plnx2)
 
 ## Install
 
