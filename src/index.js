@@ -93,7 +93,7 @@ for (let command in config.commands) {
 
     dbg({ key, secret, opt, isPrivate, ropt })
     request(ropt, (err, res, body) => {
-      if (res.statusCode !== 200) return cb(res)
+      if (res && res.statusCode !== 200) return cb(res)
       cb(err, res, body)
     })
   }
